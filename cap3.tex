@@ -7,7 +7,7 @@
 Finalizada la etapa de desarrollo del Trabajo de Fin de Máster, se procede a describir la herramienta implementada.
 
 
-La herramienta se ha denominado ghhell, abreviatura de 'GitHub Shell'. Se ha publicado en NPM\cite{NPM} para su fácil distribución e instalación:
+La herramienta se ha denominado \verb1ghshell1, abreviatura de 'GitHub Shell'. Se ha publicado en NPM\cite{URL:NPM} para su fácil distribución e instalación:
 
 \begin{figure}[H]
 \begin{center}
@@ -17,7 +17,7 @@ La herramienta se ha denominado ghhell, abreviatura de 'GitHub Shell'. Se ha pub
 \end{center}
 \end{figure}
 
-Las funcionalidades implementadas en ghshell, se describen a continuación.
+Las funcionalidades implementadas en \verb|ghshell|, se describen a continuación.
 
 %---------------------------------------------------------------------------------
 \section{Funcionalidades requeridas}
@@ -75,7 +75,7 @@ Las funcionalidades implementadas en ghshell, se describen a continuación.
 \subsection{Listar organizaciones, asignaciones y repositorios de GitHub del usuario}
 \label{subsec:3.1.2}   
     
-    Con el comando 'orgs -l', se puede listar las organizaciones del usuario y usando 'repos -l', se listarán los repositorios del usuario. También se puede acceder 'virtualmente' a las organizaciones y listar los repositorios que contiene, así como las asignaciones.
+    Con el comando \verb'orgs -l', se puede listar las organizaciones del usuario y usando \verb'repos -l', se listarán los repositorios del usuario. También se puede acceder 'virtualmente' a las organizaciones y listar los repositorios que contiene, así como las asignaciones.
 \bigskip
 
     NOTA: se puede consultar toda la información referente a los comandos del programa en el Apéndice 2.
@@ -103,6 +103,7 @@ Las funcionalidades implementadas en ghshell, se describen a continuación.
 		\label{fig:ghshell5}
 		\end{center}
 		\end{figure}
+    Las asignaciones son un conjunto de repositorios que corresponden a una tarea asignada por los profesores a los alumnos.
 		
 	También es posible acceder 'virtualmente' a los repositorios y realizar acciones sobre ellos:
 	
@@ -126,7 +127,7 @@ Las funcionalidades implementadas en ghshell, se describen a continuación.
 	    \item Clonar todos los repositorios de una asignación que coincidan con una determinada expresión
     \end{itemize}
     
-    El clonado se realiza de manera asíncrona, por lo que podemos seguir trabajando mientras se clona(n) el/los repositorio(s). Se puede observar el estado de la clonación revisando el fichero de log que se genera: \textless nombre-repositorio \textgreater -clone.log.
+    El clonado se realiza de manera asíncrona, por lo que podemos seguir trabajando mientras se clona(n) el/los repositorio(s). Se puede observar el estado de la clonación revisando el fichero de log que se genera cuyo nombre sigue el formato: \verb|nombre-repositorio -clone.log|.
     
     	\begin{figure}[H]
 		\begin{center}
@@ -136,7 +137,7 @@ Las funcionalidades implementadas en ghshell, se describen a continuación.
 		\end{center}
 		\end{figure}	
 
-    Si clonamos repositorios que pertenece a una organización, se creará una carpeta con el nombre de la organización y en su interior se guardarán los repositorios clonados.
+    Si clonamos repositorios que pertenecen a una organización, se creará una carpeta con el nombre de la organización y en su interior se guardarán los repositorios clonados.
     		
 	Además, si clonamos repositorios que pertenecen a una asignación, también se creará una carpeta con el nombre de la asignación que los contendrá.
 	
